@@ -1,0 +1,7 @@
+Beverage_preparation
+General_Household_Activities
+Cleaning
+Prepare_breakfast
+Use_Household_Appliances
+Cook
+Drink

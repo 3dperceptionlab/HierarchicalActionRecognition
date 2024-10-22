@@ -1,0 +1,48 @@
+name: "default"
+seed: 1024
+eval: False # train or eval mode
+load: # Path to the weights for evaluation
+data:
+  anno_path: '/workspace/process_anno/data/'
+  data_path: '/dataset_nvme/features/'
+  rgb_features: 'ViT-H-14' # tsn-bn_inpception tsn-inception_v3 ViT-H-14
+  flow_features: 'tsn-inception_v3'
+  text_features: '/workspace/process_anno/data/not_augmented_features_distilbert/'
+  text_only_for_coarse: False
+  workers: 8
+  batch_size: 32
+  enc_steps: 32
+model:
+  fine_only: False
+  video_transformer:
+    embedding_dim: 2048
+    num_heads: 1
+    cls_token: True # if False, uses mean
+    positional_encoding: 'learned'
+    pe_dropout: 0.1
+    dropout: 0.1
+    num_layers: 4
+    hidden_dim: 2048
+    fusion: 'late'
+  aggregation:
+    type: 'transformer' # concat transformer
+    embedding_dim: 768
+    num_heads: 2
+    num_layers: 2
+solver:
+  epochs: 100
+  type: 'multistep'
+  lr_warmup_step: 5
+  f_ratio: 1
+  weight_decay: 0.1
+  loss: 'cross-entropy'
+  lr: 0.00005
+  lr_decay_step: 100
+  lr_decay_factor: 0.1
+  optim: 'adamw'
+  clip_grad_norm: 1
+  eval_freq: 1
+  early_stopping: 20
+logging:
+  freq: 10
+  

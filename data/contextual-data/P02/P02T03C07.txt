@@ -1,0 +1,6 @@
+In the current scene there is an elderly person in the kitchen performing an action. Previously, the person performed these actions before: Unknown. The person is now performing a different action.
+In the current scene there is an elderly person in the kitchen performing an action. Previously, the person performed these actions before: Enter. The person is now performing a different action.
+In the current scene there is an elderly person in the kitchen performing an action. Previously, the person performed these actions before: Enter, Walk. The person is now performing a different action.
+In the current scene there is an elderly person in the kitchen performing an action. Previously, the person performed these actions before: Enter, Walk, Leave. The person is now performing a different action.
+In the current scene there is an elderly person in the kitchen performing an action. Previously, the person performed these actions before: Enter, Walk, Leave, Enter. The person is now performing a different action.
+In the current scene there is an elderly person in the kitchen performing an action. Previously, the person performed these actions before: Enter, Walk, Leave, Enter, Walk. The person is now performing a different action.

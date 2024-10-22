@@ -1,0 +1,3 @@
+In the current scene there is an elderly person in the dining room performing an action. Previously, the person performed these actions before: Unknown. The person is now performing a different action.
+In the current scene there is an elderly person in the dining room performing an action. Previously, the person performed these actions before: Take_something_off_table. The person is now performing a different action.
+In the current scene there is an elderly person in the dining room performing an action. Previously, the person performed these actions before: Take_something_off_table, Read. The person is now performing a different action.
